@@ -33,44 +33,44 @@ section {
 
 
 /*
-Select all the thumbs in the container
+Select all the photo in the container
 */
 
-.container .thumb:nth-child(-n+1) {
+.container .photo:nth-child(-n+1) {
     float: left;
     margin: 4px;
     border: 2px outset gray;
     transition: all 0.5s ease-in-out;
 }
 
-.thumb:nth-child(-n+1) img {
+.photo:nth-child(-n+1) img {
     margin: 1rem;
     width: 16rem;
     height: 9rem;
     border: 4px outset deepskyblue;
 }
 
-.thumb:nth-child(-n+1) p {
+.photo:nth-child(-n+1) p {
     border: 2px outset gray;
     border-radius: 32px;
     padding: 4px;
 }
 
-.container .thumb:nth-child(-n+1):hover {
+.container .photo:nth-child(-n+1):hover {
     margin: 4px;
     border: 2px outset blue;
     background: navy;
     color: paleturquoise;
 }
 
-.thumb:nth-child(-n+1):hover img {
+.photo:nth-child(-n+1):hover img {
     animation-name: race;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(2.5, 0.5, 0.2, 3.2);
 }
 
-.thumb:nth-child(-n+1):hover p {
+.photo:nth-child(-n+1):hover p {
     border: 2px inset blue;
 }
 

@@ -1,0 +1,18 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+form input[type="text"] {
+    width: 80%;
+    margin: 10px 1em;
+    border-top: 1px solid #424549;
+    border-right: 1px solid #424549;
+    border-bottom: 1px solid #424549;
+    border-left: 1px solid #090b0d;
+    border-radius: 7px;
+}
+
+form input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(45, 65, 100, .8)
+}

@@ -19,8 +19,8 @@ body {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Georgia, Verdana, sans-serif;
     line-height: 1.42857143;
-    color: #333;
-    background-color: white;
+    color: #aaa;
+    background-color: black;
 }
 
 footer,
@@ -43,7 +43,7 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: red;
+    color: whitesmoke;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -52,14 +52,14 @@ h1::after {
     content: "";
     width: 150px;
     height: 2px;
-    background: red;
+    background: whitesmoke;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
     line-height: 50px;
-    color: red;
+    color: whitesmoke;
 }
 
 h3 {
@@ -82,7 +82,12 @@ p {
 
 section {
     padding-top: 50px;
-    margin-top: 50px;
+    padding-bottom: 150px;
+    margin: 0px;
+    background-image: linear-gradient(black, midnightblue, black);
+    border-top: 4px groove lightskyblue;
+    border-bottom: 4px groove lightskyblue;
+    border-radius: 8px;
 }
 
 .text-center {
@@ -157,7 +162,7 @@ section {
 ========================================*/
 
 #home {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    /* background: black; */
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -166,8 +171,8 @@ section {
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 350px;
-    padding-bottom: 500px;
+    padding-top: 450px;
+    padding-bottom: 350px;
     color: white;
 }
 
@@ -186,8 +191,30 @@ section {
     padding: 10px;
 }
 
+.head-second {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+    font-variant: small-caps;
+    color: white;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: center;
+    font-family: Impact, Helvetica, 'Arial Narrow Bold', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    border: 5px double white;
+    padding: 10px;
+}
+
 .head-sub-main {
     font-size: 23px;
+    font-weight: 900;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-sub-second {
+    font-size: 18px;
     font-weight: 900;
     padding: 50px 20px 10px 20px;
     text-transform: uppercase;
@@ -206,19 +233,20 @@ section {
     CONTACT SECTION STYLES
 ========================================*/
 
-.felx-container {
+.flex-container {
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, .3);
+    background-color: rgba(45, 65, 100, .3);
     box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-#contact {
-    background-color: darkgray;
+#email {
+    background-color: midnightblue;
+    background-image: linear-gradient(black, midnightblue, white);
 }
 
 .reservation {
@@ -226,7 +254,7 @@ section {
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;
-    background-color: rgba(100, 65, 0, .3);
+    background-color: rgba(45, 65, 100, .3);
     box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -234,7 +262,7 @@ section {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #13161b;
+    color: whitesmoke;
     font-weight: 500;
     font-size: 1.3em;
     letter-spacing: 0pt;
@@ -245,7 +273,7 @@ section {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    color: #13161b;
+    color: whitesmoke;
     font-weight: 900;
     font-size: 1.5em;
     font-variant: small-caps;
@@ -254,7 +282,7 @@ section {
 }
 
 .reservation p {
-    color: #13161b;
+    color: whitesmoke;
     width: 50%;
     margin: 0 auto;
 }
@@ -278,7 +306,7 @@ section {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8d8e8f;
+    color: #7880af;
     padding: 2% 1% 2% 7%;
     width: 80%;
     border-right: 1px solid #424549;
@@ -293,7 +321,7 @@ section {
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100, 65, 0, .8)
+    box-shadow: 0 0 18px rgba(45, 65, 100, .8)
 }
 
 .form-spacer {
@@ -343,12 +371,39 @@ section {
 
 
 /*========================================
+    VIDEO SECTION STYLES
+========================================*/
+
+#videos {
+    padding: 5%;
+    background-color: navy;
+}
+
+.video-container {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.video {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: midnightblue;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.7);
+}
+
+
+/*========================================
     FOOTER SECTION STYLES
 ========================================*/
 
 #footer {
-    background-color: rgba(100, 65, 0, .3);
-    color: black;
+    background-color: rgba(45, 65, 100, .3);
+    color: whitesmoke;
     text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
     padding: 20px 50px 20px 50px;
     text-align: right;

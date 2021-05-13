@@ -6,36 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Page Website</title>
-    <link rel="stylesheet" href="css/basic_css.css">
+    <!--
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/animation.css">
+    -->
+    <link rel="stylesheet" href="css/one_page_website.css">
 </head>
 
 <body>
     <!-- NAV -->
-    <nav>
-        <ul>
-            <a href="#home">
-                <li>HOME</li>
-            </a>
-            <a href="#gallery">
-                <li>GALLARY</li>
-            </a>
-            <a href="#projects">
-                <li>PROJECTS</li>
-            </a>
-            <a href="#email">
-                <li>EMAIL LIST</li>
-            </a>
-        </ul>
-    </nav>
+    <div class="wrap">
+        <nav class="menu-container">
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#gallery">GALLARY</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#email">PROJECTS</a></li>
+            </ul>
+        </nav>
+    </div>
     <!-- END NAV -->
 
     <!-- Home -->
-    <section>
-        <div id="home">
-            <div>
-                <div>
-                    <span><h1><em>ALKAIN STUDIOS</em></h1></span>
-                    <h3>Video game development and indie film production studio.</h3>
+    <section id="home">
+        <div>
+            <div class="container">
+                <div class="text-center">
+                    <span class="head-main"><em>ALKAIN PRODUCTIONS</em></span>
+                    <P>[pronounced: All-cane]</P>
+                    <span class="head-sub-main">Video game development and indie film production studio.</span>
                 </div>
             </div>
         </div>
@@ -43,72 +42,72 @@
     <!-- END Home -->
     <br><br>
     <!-- GALLERY -->
-    <section>
-        <div id="gallery">
+    <section id="gallery">
+        <div class="container">
             <h1>Gallery</h1>
-            <div class="container">
+            <div class="flex-container">
                 <!-- PHOTO-CONTAINER 0 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_0.PNG" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>Shin'Ar</h3>
+                            <p>A game with a custom spell crafting.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 0 -->
                 <!-- PHOTO-CONTAINER 1 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_1.PNG" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>Always Making</h3>
+                            <p>We strive to always make something new.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 1 -->
                 <!-- PHOTO-CONTAINER 2 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_2.png" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>7 Immortals</h3>
+                            <p>An animation about a group of people that free an immortal being.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 2 -->
                 <!-- PHOTO-CONTAINER 3 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_3.png" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>Basic Trader</h3>
+                            <p>Learn the basics of day trading.</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 3 -->
                 <!-- PHOTO-CONTAINER 4 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_4.png" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>Clicker Games</h3>
+                            <p>Game made in 24 hours</p>
                         </div>
                     </div>
                 </div>
                 <!-- END PHOTO-CONTAINER 4 -->
                 <!-- PHOTO-CONTAINER 5 -->
-                <div>
-                    <div class="thumb">
+                <div class="photo-container">
+                    <div class="photo">
                         <img src="./images/Thumb/thumbnails_5.png" alt="Unable to load the image.">
-                        <div>
-                            <h3>Click to Enlarge</h3>
-                            <p>&lt; Context or sub text here. &gt;</p>
+                        <div class="photo-overlay">
+                            <h3>Labyrinth Explorer</h3>
+                            <p>Explore this living labyrinth made in C# from the ground up.</p>
                         </div>
                     </div>
                 </div>
@@ -119,93 +118,90 @@
     <!-- END GALLERY -->
     <br><br>
     <!-- PROJECTS -->
-    <section>
-        <div id="projects">
+    <section id="projects">
+        <div class="container">
             <div>
-                <div>
-                    <h1>Projects</h1>
-                </div>
-                <div>
-                    <h3><a href="https://alkain-studios-llc.itch.io/shinar-land-of-the-watchers">Shin'Ar: Land of the watchers</a></h3>
-                    <!-- PHOTO-CONTAINER 0 -->
-                    <div>
-                        <div>
-                            <img src="./images/Thumb/thumbnails_0.PNG" alt="Unable to load the image." style="width: 32rem; height: 22rem;">
-                            <div>
-                                <h3>Click to Enlarge</h3>
-                                <p>&lt; Context or sub text here. &gt;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER 0 -->
-                </div>
-                <div>
-                    <h3><a href="https://alkain-studios-llc.itch.io/basic-trader">Basic Trader</a></h3>
-                    <!-- PHOTO-CONTAINER 3 -->
-                    <div>
-                        <div>
-                            <img src="./images/Thumb/thumbnails_3.png" alt="Unable to load the image." style="width: 32rem; height: 20rem;">
-                            <div>
-                                <h3>Click to Enlarge</h3>
-                                <p>&lt; Context or sub text here. &gt;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END PHOTO-CONTAINER 3 -->
-                </div>
-                <div>
-                    <h3><a href="https://alkain-studios-llc.itch.io/cs-labyrinth-explorer">Labyrinth Explorer</a></h3>
-                    <!-- PHOTO-CONTAINER 5 -->
-                    <div>
-                        <div>
-                            <img src="./images/Thumb/thumbnails_5.png" alt="Unable to load the image." style="width: 32rem; height: 18rem;">
-                            <div>
-                                <h3>Click to Enlarge</h3>
-                                <p>&lt; Context or sub text here. &gt;</p>
-                            </div>
+                <h1>Projects</h1>
+            </div>
+            <div class="flex-container">
+                <!-- PROJECT-CONTAINER 3 -->
+                <div class="project-container">
+                    <div class="project">
+                        <img src="./images/Thumb/thumbnails_0.PNG" alt="Unable to load the image.">
+                        <div class="project-overlay">
+                            <h3>Click to Enlarge</h3>
+                            <p><a href="https://alkain-studios-llc.itch.io/shinar-land-of-the-watchers">Shin'Ar: Land of the watchers</a></p>
                         </div>
                     </div>
                 </div>
+                <!-- PROJECT-CONTAINER 3 -->
+                <!-- PROJECT-CONTAINER 3 -->
+                <div class="project-container">
+                    <div class="project">
+                        <img src="./images/Thumb/thumbnails_3.png" alt="Unable to load the image.">
+                        <div class="project-overlay">
+                            <h3>Click to Enlarge</h3>
+                            <p><a href="https://alkain-studios-llc.itch.io/basic-trader">Basic Trader</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT-CONTAINER 3 -->
+                <!-- PROJECT-CONTAINER 3 -->
+                <div class="project-container">
+                    <div class="project">
+                        <img src="./images/Thumb/thumbnails_5.png" alt="Unable to load the image.">
+                        <div class="project-overlay">
+                            <h3>Click to Enlarge</h3>
+                            <p><a href="https://alkain-studios-llc.itch.io/cs-labyrinth-explorer">Labyrinth Explorer</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROJECT-CONTAINER 3 -->
             </div>
         </div>
     </section>
     <!-- END PROJECTS -->
-
+    <br><br>
     <!-- VIDEOS -->
-    <section>
-        <div>
-            <div>
-                <!-- iframe goes here -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/161nRdJhWe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- End of iframe -->
+    <section id="videos">
+        <div class="container">
+            <h1 class="heading-padding">Videos</h1>
+            <div class="flex-container">
+                <div class="video-container">
+                    <div class="video">
+                        <!-- iframe goes here -->
+                        <iframe width="680" height="420" src="https://www.youtube.com/embed/161nRdJhWe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!-- End of iframe -->
 
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- END VIDEOS -->
-
+    <br><br>
     <!-- RSVP -->
-    <section>
-        <div id="email">
-            <div>
-                <h1>Email List</h1>
-                <div>
-                    <h2>
-                        <span>Join us on our journy and subscibe to our lastest products.</span>
-                        <br>Reserve your spot today!
+    <section id="email">
+        <div class="container">
+            <div class="heading-padding">
+                <h1 class="heading-padding">Contact Us</h1>
+                <div class="reservation">
+                    <h2><span>Join us on our journy and subscibe to our lastest productions.</span>
+                        <br> Contact us for more information!
                     </h2>
-                    <p>
-                        Please provide us with your basic contact information.
+                    <p class="contact-text">
+                        Please provide us with your basic contact info.
                     </p>
-                    <div>
-                        <form action="" method="POST">
-                            <input class="RSVP" type="text" placeholder="First Name">
-                            <input class="RSVP" type="text" placeholder="Last Name">
-                            <input class="RSVP" type="text" placeholder="user@email.com">
+                    <div class="contact-form">
+                        <form action="" method="post">
+                            <input class="rsvp" type="text" value="" placeholder="First Name">
+                            <input class="rsvp" type="text" value="" placeholder="Last Name">
+                            <input class="rsvp" type="text" value="" placeholder="Email Address">
+                            <input class="rsvp" type="text" value="" placeholder="Phone number">
                             <div class="form-spacer">
                                 <label class="terms">Terms and Conditions</label>
                             </div>
-                            <div>
+                            <div class="submit">
                                 <input type="submit" value="Submit">
                             </div>
                         </form>
@@ -215,16 +211,17 @@
         </div>
     </section>
     <!-- END RSVP -->
+    <br><br>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div>
+            www.alkainprodutcions.com &nbsp;|&nbsp; &copy; 2021
+        </div>
+    </footer>
+    <!-- END FOOTER -->
 
 
 </body>
-
-<!-- FOOTER -->
-<footer>
-    <div>
-        www.webadresshere.com &nbsp;|&nbsp; &copy; 2021
-    </div>
-</footer>
-<!-- END FOOTER -->
 
 </html>
