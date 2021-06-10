@@ -44,17 +44,12 @@
 
 /* Modal Content */
 
-img.modal-content {
-    width: 90%;
-    height: fit-content;
-}
-
 .modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 50%;
     max-width: 1200px;
 }
 
